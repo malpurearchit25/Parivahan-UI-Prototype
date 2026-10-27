@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="An independent student prototype exploring transport service navigation. No real applications, payments, or record lookups."
+    />
+    <meta name="theme-color" content="#f5f4ef" />
+    <title>Every vehicle. A clear next step. | Parivahan concept</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="assets/data.js" defer></script>
+    <script src="assets/app.js" defer></script>
+  </head>
+  <body id="top" data-category="vehicle">
+    <a class="skip" href="#main">Skip to content</a>
+    <div class="demo-strip">
+      <span class="dot"></span> INDEPENDENT STUDENT PROJECT
+      <span class="strip-divider">/</span>
+      <span>Prototype only · Not an official service</span>
+    </div>
+    <header>
+      <a class="brand" href="index.html" aria-label="Parivahan concept home"
+        ><span class="brand-icon">P<span>↗</span></span
+        ><span>PARIVAHAN<small>A transport services concept</small></span></a
+      ><button
+        class="menu-toggle"
+        aria-expanded="false"
+        aria-controls="main-nav"
+      >
+        Menu <span>☰</span>
+      </button>
+      <nav id="main-nav" aria-label="Main navigation">
+        <a href="index.html">Overview</a
+        ><a href="driving-license.html">Driving licence</a
+        ><a href="vehicle-registration.html">Vehicle services</a
+        ><a href="other-services.html">More services</a>
+      </nav>
+    </header>
+    <main id="main">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">
+            <span class="line"></span> A BETTER WAY TO FIND YOUR WAY
+          </p>
+          <h1>Every vehicle.<br />A clear next step.</h1>
+          <p class="hero-description">
+            Discover registration, ownership, and fitness services without
+            getting lost in the details.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#services"
+              >Explore services <span>↗</span></a
+            ><a class="text-link" href="index.html#lookup"
+              >Try a sample lookup <span>→</span></a
+            >
+          </div>
+          <div class="hero-meta">
+            <span class="tiny-icon">✓</span> Simple navigation
+            <span class="meta-dot">·</span> Clear next steps
+          </div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="art-grid"></div>
+          <div class="art-label">YOUR NEXT CHAPTER <span>↗</span></div>
+          <svg class="road" viewBox="0 0 500 480" fill="none">
+            <path
+              d="M180 540V370C180 290 340 320 340 225V-40"
+              stroke="#dde3ce"
+              stroke-width="116"
+            />
+            <path
+              d="M180 540V370C180 290 340 320 340 225V-40"
+              stroke="#fffdf6"
+              stroke-width="3"
+              stroke-dasharray="13 13"
+            />
+            <circle cx="340" cy="125" r="19" fill="#254d40" />
+            <circle cx="340" cy="125" r="6" fill="#f6f4eb" />
+          </svg>
+          <div class="art-card">
+            <span class="card-icon">↗</span>
+            <div>
+              <small>ONE PLACE TO START</small
+              ><strong>Move forward,<br />with confidence.</strong>
+            </div>
+            <span class="art-card-dot"></span>
+          </div>
+          <span class="art-coordinate"
+            >18.5204° N &nbsp; 73.8567° E <small>ILLUSTRATIVE MAP</small></span
+          >
+        </div>
+      </section>
+      <div class="category-strip">
+        <span>01 <strong>Find your service</strong></span
+        ><span>02 <strong>Understand the steps</strong></span
+        ><span>03 <strong>Continue on the official portal</strong></span>
+      </div>
+      <section class="section services" id="services">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">MADE EASIER TO EXPLORE</p>
+            <h2>What brings you here?</h2>
+          </div>
+          <p class="muted">
+            Find a starting point.<br />We’ll help you see what comes next.
+          </p>
+        </div>
+        <div class="service-toolbar">
+          <p class="category-note">VEHICLE SERVICES / EXPLORE THE GUIDES</p>
+          <label class="search"
+            ><span>⌕</span
+            ><input
+              id="service-search"
+              type="search"
+              placeholder="Search services"
+              aria-label="Search services"
+          /></label>
+        </div>
+        <p class="sr-only" id="service-count" role="status"></p>
+        <div class="service-grid" id="service-grid"></div>
+        <p class="no-results" hidden>
+          No services match that search. Try “licence”, “tax”, or
+          “registration”.
+        </p>
+      </section>
+      <section class="section faq">
+        <div>
+          <p class="eyebrow">A FEW THINGS TO KNOW</p>
+          <h2>Before you get going.</h2>
+          <p class="muted">Clear expectations make a better journey.</p>
+        </div>
+        <div class="faq-list">
+          <details>
+            <summary>Is this an official government website?</summary>
+            <p>
+              No. This is an independent student project exploring the design of
+              transport services. It is not affiliated with Parivahan or any
+              government authority.
+            </p>
+          </details>
+          <details>
+            <summary>Can I apply or make a payment here?</summary>
+            <p>
+              No applications, payments, or document uploads take place here.
+              Service cards provide illustrative guides and a link to the
+              official portal.
+            </p>
+          </details>
+          <details>
+            <summary>Does the lookup access real records?</summary>
+            <p>
+              No. It reads two fictional records bundled with the page. Use the
+              sample buttons; do not enter personal identifiers.
+            </p>
+          </details>
+        </div>
+      </section>
+      <section class="official-banner">
+        <div>
+          <p class="eyebrow">READY FOR THE REAL THING?</p>
+          <h2>Take the next step<br />on the official portal.</h2>
+        </div>
+        <a
+          href="https://parivahan.gov.in/"
+          class="button light"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Visit Parivahan ↗</a
+        >
+      </section>
+    </main>
+    <footer>
+      <div class="footer-top">
+        <a class="brand" href="index.html"
+          ><span class="brand-icon">P<span>↗</span></span
+          ><span
+            >PARIVAHAN<small>Designed for a clearer journey.</small></span
+          ></a
+        >
+        <p>
+          A student frontend prototype inspired by transport services.<br />Independent
+          project. No government affiliation.
+        </p>
+      </div>
+      <div class="footer-bottom">
+        <span>HTML · CSS · JavaScript</span
+        ><span
+          >No personal data collected. No real applications or payments.</span
+        ><a href="#top">Back to top ↑</a>
+      </div>
+    </footer>
+    <dialog id="service-dialog" aria-labelledby="dialog-title">
+      <button class="dialog-close" aria-label="Close service details">✕</button>
+      <p class="eyebrow">SERVICE GUIDE / DEMO</p>
+      <h2 id="dialog-title"></h2>
+      <p id="dialog-description"></p>
+      <ol id="dialog-steps"></ol>
+      <p class="note">
+        An illustrative guide, not current legal or application advice.
+        Requirements vary; verify them on the official portal.
+      </p>
+      <a
+        class="button primary"
+        href="https://parivahan.gov.in/"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Visit official Parivahan ↗</a
+      >
+    </dialog>
+    <button
+      class="help-launcher"
+      aria-controls="help-panel"
+      aria-expanded="false"
+    >
+      ? <span>Quick help</span>
+    </button>
+    <aside id="help-panel" hidden aria-labelledby="help-title">
+      <div class="help-heading">
+        <div>
+          <small>LOCAL GUIDE</small>
+          <h2 id="help-title">A little direction.</h2>
+        </div>
+        <button id="help-close" aria-label="Close quick help">✕</button>
+      </div>
+      <p>
+        This is a scripted help guide, not an AI chatbot. Choose a topic to get
+        started.
+      </p>
+      <div class="help-topics">
+        <button data-help="licence">Driving licence</button
+        ><button data-help="vehicle">Vehicle services</button
+        ><button data-help="demo">About this demo</button>
+      </div>
+      <p id="help-answer" role="status">
+        How can we point you in the right direction?
+      </p>
+    </aside>
+  </body>
+</html>
